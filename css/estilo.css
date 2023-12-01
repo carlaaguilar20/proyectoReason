@@ -1,0 +1,158 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container {  
+    height: 99vh;
+    width: 99vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "sectionA sectionA sectionA"
+      "sectionB sectionB aside"
+      "article1 article2 aside"
+      "footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .section1 { grid-area: sectionA; }
+  
+  .section2 { grid-area: sectionB; }
+  
+  .aside { grid-area: aside; }
+  
+  .article1 { grid-area: article1; }
+  
+  .article2 { grid-area: article2; }
+  
+  .footer { grid-area: footer; }
+  
+
+  
+  
+  body{
+    background-image: url(../img/fondoproyecto.jpeg);
+    background-size: cover;
+  }
+  
+  .header { 
+    background-color: black;
+}
+  .sectionA { 
+    grid-area: sectionA; 
+    margin: 10px;
+ }
+  
+  .sectionB { 
+    background-color: black;
+    grid-area: sectionB;
+    margin: 10px;
+}
+.article1 { 
+    background-color: black;
+    grid-area: article1;
+    margin: 10px;
+}
+.article2 { 
+    background-color: black;
+    grid-area: article2;
+    margin: 10px;
+ }
+  
+.aside { 
+    background-color: white;
+    grid-area: aside;
+   margin: 10px;
+ }
+  
+.footer { 
+    background-color: black;
+    grid-area: footer; 
+    margin: 10px;
+
+}
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 10rem;
+    font-family: 'Elsie', serif;
+}
+
+.menu{ 
+    margin: auto;
+    background-color: black;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a{
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.menu li a:hover{
+color: black;
+background-color:white; 
+border-radius: 50px;
+}
+h2{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+    font-family: 'Elsie', serif;
+    margin: 10px;
+}
+h3{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Elsie', serif;
+    margin: 10px;
+}
+.letranegra{
+    color: black;
+    list-style: none;
+    font-family: 'Elsie', serif;
+}
+.logo{
+    width: 80px;
+}
+.logo2{
+    width: 50px;
+}
+.formulario{
+   color: black;
+   margin: 20px;
+   padding: 20px;
+   font-weight: bold;
+   font-size: larger;
+   font-family: 'Elsie', serif;
+   line-height: 1cm;
+   width: 500px;
+   background-color: white;
+}
+.locales{
+   color: white;
+   margin: 20px;
+   padding: 20px;
+   font-weight: bold;
+   font-size: larger;
+   font-family: 'Elsie', serif;
+}
