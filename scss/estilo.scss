@@ -6,8 +6,9 @@
 .container {  
     height: 99vh;
     width: 99vw;
+    margin: 10px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: 2fr 2fr 2fr 2fr 0.5fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
@@ -18,31 +19,14 @@
       "sectionB sectionB aside"
       "article1 article2 aside"
       "footer footer footer";
-  }
-  
-  .header { grid-area: header; }
-  
-  .section1 { grid-area: sectionA; }
-  
-  .section2 { grid-area: sectionB; }
-  
-  .aside { grid-area: aside; }
-  
-  .article1 { grid-area: article1; }
-  
-  .article2 { grid-area: article2; }
-  
-  .footer { grid-area: footer; }
-  
-
-  
-  
+} 
 body{
     background-image: url(../img/fondoproyecto.jpeg);
     background-size: cover;
 }
   
-.header { 
+header { 
+    margin: 10px;
     background-color: black;
     h1{
         background-color: black;
@@ -53,103 +37,135 @@ body{
         font-family: 'Elsie', serif;
     }  
 }
-.sectionA { 
-    grid-area: sectionA; 
-    margin: 10px;
-    .menu{
-        margin: auto;
+main{
+    .sectionA{
+        margin: 10px;
+        grid-area: sectionA;
         background-color: black;
-        list-style: none;
-        text-align: center;
-        width: 100%;
-        border-radius: 10px;
-        .menu li{
-            display: inline-block;
-            .menu li a{
+        nav{
+            background-color: black;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            ul{
+                list-style: nome;
+                justify-content: center;
+                display: flex;
                 padding: 10px;
-                margin: 20px;
-                color: white;
-                text-decoration: none;
-                display: inline-block;
-                &:hover{
-                    color: black;
-                    background-color:white; 
-                    border-radius: 50px;
-
+                li{
+                    list-style: none;
+                    a{
+                        padding: 10px;
+                        margin: 20px;
+                        color: white;
+                        text-decoration: none;
+                        display: flex;
+                        list-style: none;
+                        &:hover{
+                            color: black;
+                            background-color:white; 
+                            border-radius: 50px;
+                        }
+                    }
                 }
             }
-
         }
-
-
     }
-}
-.sectionB{
-    background-color: black;
-    grid-area: sectionB;
-    margin: 10px;
-    .formulario{
-        color: black;
-        margin: 20px;
-        padding: 20px;
-        font-weight: bold;
-        font-size: larger;
-        font-family: 'Elsie', serif;
-        line-height: 1cm;
-        width: 500px;
-        background-color: white;
+    .sectionB{
+        background-color: black;
+        grid-area: sectionB;
+        margin: 10px;
         h2{
+            color: white;
+            font-family: 'Elsie', serif;
+            text-align: center;
+            padding: 10px;
+            font-size: 3rem;
+        }
+        .letrablanca{
+            color: white;
+            font-size: 2rem;
+            padding: 10px;
+            font-family: 'Elsie', serif;
+        }
+        .letranegra{
+            color: black;
+            font-size: 2rem;
+            padding: 10px;
+            font-family: 'Elsie', serif;
+        }
+        .formulario{
+            color: black;
+            margin: 20px;
+            padding: 20px;
+            font-weight: bold;
+            font-size: larger;
+            font-family: 'Elsie', serif;
+            line-height: 1cm;
+            width: 500px;
+            background-color: white;
+        }
+        .locales{
+            color: white;
+            margin: 20px;
+            padding: 20px;
+            font-weight: bold;
+            font-size: larger;
+            font-family: 'Elsie', serif;
+        }     
+    }
+    .article1{
+        background-color: black;
+        grid-area: article1;
+        margin: 10px;
+        .logo{
+            width: 40px;
+        }
+    }
+    .article2{
+        background-color: black;
+        grid-area: article2;
+        margin: 10px;
+        .letrablanca{
             color: white;
             text-align: center;
             padding: 20px;
-            font-size: 3rem;
+            font-size: 2rem;
             font-family: 'Elsie', serif;
-            margin: 10px;
-            .letranegra{
-                color: black;
-                list-style: none;
-                font-family: 'Elsie', serif;
-            }
+            margin: 20px;   
+        }
+    }    
+    .aside{
+        background-color: white;
+        grid-area: aside;
+        margin: 10px;
+        text-align: center;
+        .letranegra{
+            color: black;
+            font-size: 2rem;
+            font-family: 'Elsie', serif;
+        }
+        ul{
+           list-style-type: none;
         }
     }
-    .locales{
-        color: white;
-        margin: 20px;
-        padding: 20px;
-        font-weight: bold;
-        font-size: larger;
-        font-family: 'Elsie', serif;
-    }
 }
-
-.article1{
-    background-color: black;
-    grid-area: article1;
-    margin: 10px
-}
-.article2{
-    background-color: black;
-    grid-area: article2;
-    margin: 10px;
-}
-.aside{
-    background-color: white;
-    grid-area: aside;
-    margin: 10px;
-}
-.footer{
+footer{
     background-color: black;
     grid-area: footer; 
     margin: 10px;
+    text-align: center;
+    .logo2{
+        width: 50px;  
+    }
     h3{
         color: white;
         text-align: center;
         padding: 20px;
         font-size: 2rem;
         font-family: 'Elsie', serif;
-        margin: 10px;
-        .logo2{
-            width: 50px;
-        }
+        margin: 10px;    
     }
+
 }
