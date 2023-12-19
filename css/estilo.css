@@ -26,6 +26,9 @@ header {
   margin: 10px;
   background-color: black;
 }
+header img {
+  width: 100px;
+}
 header h1 {
   background-color: black;
   color: white;
@@ -33,6 +36,35 @@ header h1 {
   padding: 20px;
   font-size: 10rem;
   font-family: "Elsie", serif;
+}
+header nav {
+  background-color: black;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+header nav ul {
+  list-style: nome;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  padding: 10px;
+  margin: 20px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+}
+header nav ul li a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 50px;
 }
 
 main .sectionA {
@@ -69,6 +101,13 @@ main .sectionA nav ul li a:hover {
   background-color: white;
   border-radius: 50px;
 }
+main .sectionA h2 {
+  color: white;
+  font-family: "Elsie", serif;
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+}
 main .sectionB {
   background-color: black;
   grid-area: sectionB;
@@ -79,7 +118,7 @@ main .sectionB h2 {
   font-family: "Elsie", serif;
   text-align: center;
   padding: 10px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 main .sectionB .letrablanca {
   color: white;
@@ -95,13 +134,12 @@ main .sectionB .letranegra {
 }
 main .sectionB .formulario {
   color: black;
-  margin: 20px;
   padding: 20px;
   font-weight: bold;
   font-size: larger;
   font-family: "Elsie", serif;
-  line-height: 1cm;
-  width: 500px;
+  line-height: 1.5cm;
+  width: fit-content;
   background-color: white;
 }
 main .sectionB .locales {
@@ -112,10 +150,21 @@ main .sectionB .locales {
   font-size: larger;
   font-family: "Elsie", serif;
 }
+main .sectionB h3 {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  font-family: "Elsie", serif;
+  margin: 10px;
+}
 main .article1 {
   background-color: black;
   grid-area: article1;
   margin: 10px;
+}
+main .article1 .reasonacordeon {
+  background-color: darkviolet;
 }
 main .article1 .logo {
   width: 40px;
@@ -138,6 +187,14 @@ main .aside {
   grid-area: aside;
   margin: 10px;
   text-align: center;
+}
+main .aside h3 {
+  font-family: "Elsie", serif;
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5cm;
+  font-weight: lighter;
 }
 main .aside .letranegra {
   color: black;

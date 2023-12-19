@@ -1,3 +1,6 @@
+$espacio: 10px;
+$tamaño: 40px;
+$parrafo: 2rem;
 *{
     margin: 0%;
     padding: 0%;
@@ -28,6 +31,9 @@ body{
 header { 
     margin: 10px;
     background-color: black;
+    img{
+        width: 100px;
+    }
     h1{
         background-color: black;
         color: white;
@@ -35,7 +41,36 @@ header {
         padding: 20px;
         font-size: 10rem;
         font-family: 'Elsie', serif;
-    }  
+    } 
+    nav{
+        background-color: black;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        ul{
+            list-style: nome;
+            justify-content: center;
+            display: flex;
+            padding: $espacio;
+            li{
+                list-style: none;
+                a{
+                    padding: $espacio;
+                    margin: 20px;
+                    color: white;
+                    text-decoration: none;
+                    display: flex;
+                    list-style: none;
+                    &:hover{
+                        color: black;
+                        background-color:white; 
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+    }   
 }
 main{
     .sectionA{
@@ -71,6 +106,14 @@ main{
                 }
             }
         }
+        h2{
+            color: white;
+            font-family: 'Elsie', serif;
+            text-align: center;
+            padding: 10px;
+            font-size: $parrafo;
+        }
+        
     }
     .sectionB{
         background-color: black;
@@ -81,7 +124,7 @@ main{
             font-family: 'Elsie', serif;
             text-align: center;
             padding: 10px;
-            font-size: 3rem;
+            font-size: $parrafo;
         }
         .letrablanca{
             color: white;
@@ -97,13 +140,12 @@ main{
         }
         .formulario{
             color: black;
-            margin: 20px;
             padding: 20px;
             font-weight: bold;
             font-size: larger;
             font-family: 'Elsie', serif;
-            line-height: 1cm;
-            width: 500px;
+            line-height: 1.5cm;
+            width: fit-content;
             background-color: white;
         }
         .locales{
@@ -113,14 +155,25 @@ main{
             font-weight: bold;
             font-size: larger;
             font-family: 'Elsie', serif;
-        }     
+        } 
+        h3{
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2rem;
+            font-family: 'Elsie', serif;
+            margin: 10px;    
+        } 
     }
     .article1{
         background-color: black;
         grid-area: article1;
         margin: 10px;
+        .reasonacordeon{
+            background-color: darkviolet;
+        }
         .logo{
-            width: 40px;
+            width: $tamaño;
         }
     }
     .article2{
@@ -131,7 +184,7 @@ main{
             color: white;
             text-align: center;
             padding: 20px;
-            font-size: 2rem;
+            font-size: $parrafo;
             font-family: 'Elsie', serif;
             margin: 20px;   
         }
@@ -141,6 +194,14 @@ main{
         grid-area: aside;
         margin: 10px;
         text-align: center;
+        h3{
+            font-family: 'Elsie', serif;
+            padding: $espacio;
+            text-align: center;
+            font-size: $parrafo;
+            line-height: 1.5cm;
+            font-weight: lighter;
+        }
         .letranegra{
             color: black;
             font-size: 2rem;
@@ -149,6 +210,7 @@ main{
         ul{
            list-style-type: none;
         }
+
     }
 }
 footer{
