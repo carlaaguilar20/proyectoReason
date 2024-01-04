@@ -222,7 +222,8 @@ footer h3 {
   font-family: "Elsie", serif;
   margin: 10px;
 }
- @media  screen and (max-width :480px) {
+
+@media screen and (max-width: 480px) {
   .container {
     height: 100vh;
     width: 100vw;
@@ -230,5 +231,6 @@ footer h3 {
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
     grid-template-areas: "header " "sectionA" "sectionB" "aside" "article1" "article2" "footer";
   }
- }
+}
+
 /*# sourceMappingURL=estilo.css.map */
