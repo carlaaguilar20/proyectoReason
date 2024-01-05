@@ -217,6 +217,9 @@ main{
             font-weight: bold;
             font-family: 'Elsie', serif;
             font-size: 1.2rem;
+            &:hover{
+            border-radius: 40%;
+            }
         }
     }
     .article2{
@@ -309,7 +312,7 @@ footer{
     }
    }
 
-  @media (min-widt: $smartphone) and (max-widt : $tablets) {
+  @media screen and (min-widt: $smartphone) and (max-widt : $tablets) {
     .container{
         grid-template-columns: 1fr 1fr;
       grid-template-rows: 2fr 2fr 2fr 2fr 2fr 0.5fr;

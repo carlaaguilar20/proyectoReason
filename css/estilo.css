@@ -210,6 +210,9 @@ main .article1 .mapalocales {
   font-family: "Elsie", serif;
   font-size: 1.2rem;
 }
+main .article1 .mapalocales:hover {
+  border-radius: 40%;
+}
 main .article2 {
   background-color: black;
   grid-area: article2;
@@ -298,7 +301,7 @@ footer h3 {
     grid-template-areas: "header " "sectionA" "sectionB" "aside" "article1" "article2" "footer";
   }
 }
-@media (min-widt: 480px) and (max-widt: 780px) {
+@media screen and (min-widt: 480px) and (max-widt: 780px) {
   .container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 0.5fr;
